@@ -22,7 +22,7 @@ export default function App() {
 
     if (members.includes(name.trim())) {
       return Alert.alert(
-        'Ateção',
+        'Atenção',
         'O participante: ' + name + ' já foi adicionado!',
       );
     }
@@ -39,7 +39,7 @@ export default function App() {
   }
 
   function handleRemoveMember(member: string) {
-    Alert.alert('Remover', 'Remover o ' + member, [
+    Alert.alert('Remover', 'Remover ' + member, [
       {
         text: 'Sim',
         isPreferred: true,
@@ -60,7 +60,7 @@ export default function App() {
       <TitleEvent
         key={12}
         subTitle="Sexta, 4 de Junho de 2023."
-        title="Jogos interno IFTO"
+        title="Jogos internos IFTO"
       />
       <View style={styled.containerInput}>
         <TextInput
